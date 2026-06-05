@@ -26,7 +26,7 @@ const obj2 = {3: "a", 4: "b"}
 // const obj3 = Object.assign({}, obj1, obj2) // copying to obj3 else in obj1 
 
 const obj3 = {...obj1, ...obj2} // mostly used
-console.log(obj3);
+// console.log(obj3);
 
 const users = [  // array of objects
     {
@@ -44,11 +44,41 @@ const users = [  // array of objects
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // array datatype
-console.log(Object.values(tinderUser)); // array datatype
-console.log(Object.entries(tinderUser)); // array of array
+// console.log(Object.keys(tinderUser)); // array datatype
+// console.log(Object.values(tinderUser)); // array datatype
+// console.log(Object.entries(tinderUser)); // array of array
 
-console.log(tinderUser.hasOwnProperty('isloggedIn')); // bool value
+// console.log(tinderUser.hasOwnProperty('isloggedIn')); // bool value
+
+//  +++++++++ object de-structur ++++++++++
+
+const course = {
+    courseName: "Js in hindi",
+    price: 999,
+    courseInstructor: 'Hitesh'
+
+}
+
+// course.courseInstructor
+
+const {courseInstructor} = course
+const {courseInstructor: instructor} = course
+
+console.log(courseInstructor); // Hitesh
+console.log(instructor);  // Hitesh
+
+// in json both key and value are string
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+{
+    {},
+    {},
+    {}
+}
 
