@@ -76,9 +76,9 @@ console.log(instructor);  // Hitesh
 //     "price": "free"
 // }
 
-{
-    {},
-    {},
-    {}
-}
+// {
+//     {},
+//     {},
+//     {}
+// }
 
